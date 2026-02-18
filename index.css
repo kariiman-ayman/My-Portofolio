@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #f5f5f5;
+    min-height: 100vh;
+    background-color: #151312;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 64px;
+    gap: 48px;
+}
+
+.floatingCard {
+    overflow: hidden;
+    position: sticky;
+    top: 64px;
+    width: 380px;
+    height: 625px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.floatingCard > img {
+    width: 240px;
+    height: 284px;
+    object-fit: cover;
+    border-radius: 28px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.floatingCard > h6 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #212121;
+}
+
+.floatingCard > p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #212121;
+    opacity: 0.6;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.socialMedia a {
+    padding: 8px;
+    opacity: 0.9;
+    font-weight: 500;
+    color: #212121;
+    display: flex;
+    justify-self: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.socialMedia a:hover {
+    opacity: 1;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+.socialMedia img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.socialMedia img:last-child {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.Highlights {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Highlights p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    /* color: #212121; */
+    opacity: 0.6;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+h1 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 84px;
+}
+
+h1 span {
+    color: #FFD700;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+h2 span {
+    opacity: 0.4;
+}
+
+h3 {
+    opacity: 0.6;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding-block: 24px;
+}
+
+.skill {
+    padding: 16px 24px;
+    border-radius: 24px;
+    display: flex;
+    gap: 18px;
+}
+
+.skill img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+
+.skill h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.skill p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    opacity: 0.6;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.projects a {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 8px 12px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    transform: all 0.2s ease-in-out;
+}
+
+.projects a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.projects img:first-child {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.projects img:last-child {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.projects div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.projects h4 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.projects p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    opacity: 0.6;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.experience div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+}
+
+.experience h4 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.experience p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    opacity: 0.6;
+}
